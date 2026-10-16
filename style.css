@@ -149,7 +149,7 @@ a:focus-visible {
   width: 230px;
   max-width: 100%;
   aspect-ratio: 1;
-  border-radius: 50%;
+  border-radius: 0;
   border: 1px solid var(--home-line);
   background: #faf5f5;
   box-shadow: 0 8px 24px rgba(128, 0, 0, 0.08);
