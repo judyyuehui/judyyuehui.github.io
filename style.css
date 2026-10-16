@@ -146,7 +146,8 @@ a:focus-visible {
 }
 
 .profile-photo-frame {
-  width: 180px;
+  width: 230px;
+  max-width: 100%;
   aspect-ratio: 1;
   border-radius: 50%;
   border: 1px solid var(--home-line);
@@ -574,7 +575,7 @@ a:focus-visible {
   }
 
   .profile-photo-frame {
-    width: 168px;
+    width: 220px;
   }
 
   .profile-name {
