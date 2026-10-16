@@ -1,0 +1,247 @@
+% Build: pdflatex -interaction=nonstopmode -halt-on-error -jobname=Judy_Resume Judy_CV.tex
+% Content sources: the existing CV and the author's website, October 2026.
+% Academic references and co-chair roles were recovered from the author's
+% website history (commit de424dc, before removal from the homepage).
+% Placement-office contacts are omitted at the author's request.
+% No expected completion date has been supplied.
+% Public reference-contact sources, checked October 16, 2026:
+% https://bpb-us-w2.wpmucdn.com/voices.uchicago.edu/dist/f/575/files/2025/07/CV22025.pdf
+% https://stat.uchicago.edu/people/profile/lars-peter-hansen/
+% https://economics.uchicago.edu/people/faculty?name=G&title=all
+% https://faculty.chicagobooth.edu/raghuram-rajan
+\documentclass[11pt,letterpaper]{article}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{crimson}
+\usepackage[margin=0.75in]{geometry}
+\usepackage{microtype}
+\usepackage{enumitem}
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage{titlesec}
+\usepackage{xcolor}
+\definecolor{uchicagomaroon}{HTML}{800000}
+\usepackage[
+  colorlinks=true,
+  urlcolor=uchicagomaroon,
+  linkcolor=uchicagomaroon,
+  pdftitle={Judy (Hui) Yue -- Curriculum Vitae},
+  pdfauthor={Judy (Hui) Yue},
+  pdfsubject={Academic curriculum vitae},
+  pdfkeywords={financial economics, macro-finance, real estate, curriculum vitae}
+]{hyperref}
+
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{3pt}
+\setlength{\emergencystretch}{1.5em}
+\renewcommand{\arraystretch}{1.1}
+\urlstyle{same}
+\raggedbottom
+\titleformat{\section}{\normalfont\bfseries\large}{}{0pt}{}[\vspace{-7pt}\rule{\linewidth}{0.4pt}]
+\titlespacing*{\section}{0pt}{9pt}{3pt}
+\setlist[enumerate]{leftmargin=2.1em,label=\arabic*.,itemsep=8pt,topsep=0pt,parsep=3pt}
+
+\newenvironment{sectionbody}{%
+  \begin{list}{}{\setlength{\leftmargin}{0.18in}\setlength{\rightmargin}{0pt}%
+    \setlength{\topsep}{0pt}\setlength{\partopsep}{0pt}%
+    \setlength{\parsep}{3pt}\setlength{\itemsep}{0pt}}\item[]%
+}{\end{list}}
+\newcommand{\education}[3]{%
+  \textbf{#1}\hfill\textit{#2}\\#3\par
+}
+\newcommand{\paperabstract}[1]{\par\begingroup\small\itshape Abstract: #1\par\endgroup}
+
+\begin{document}
+
+\begin{center}
+  {\LARGE\bfseries Judy (Hui) Yue}\\[7pt]
+  \href{mailto:hyue0@chicagobooth.edu}{hyue0@chicagobooth.edu}
+  \enspace\textbullet\enspace
+  \href{https://judyyuehui.github.io/}{judyyuehui.github.io}
+  \enspace\textbullet\enspace
+  (+1) 646-262-5662\\[3pt]
+  {\small GitHub: \href{https://github.com/judyyuehui}{github.com/judyyuehui}}
+\end{center}
+\vspace{-5pt}
+
+\section*{Office Contact Information}
+\begin{sectionbody}
+  University of Chicago Booth School of Business\\
+  5807 S. Woodlawn Avenue\\
+  Chicago, IL 60637
+\end{sectionbody}
+
+\section*{Graduate Studies}
+\begin{sectionbody}
+  \education{University of Chicago}{September 2021--present}{%
+    Ph.D. Candidate, Joint Program in Financial Economics}
+\end{sectionbody}
+
+\section*{References}
+\begin{sectionbody}
+  \begin{tabularx}{\linewidth}{@{}X@{\hspace{0.25in}}X@{}}
+    \textbf{Professor Stefan Nagel (Co-chair)} &
+      \textbf{Professor Lars Peter Hansen (Co-chair)}\\
+    Booth School of Business & Department of Economics\\
+    University of Chicago & University of Chicago\\
+    773-834-3709 & 773-702-3908\\
+    \href{mailto:stefan.nagel@chicagobooth.edu}{stefan.nagel@chicagobooth.edu} &
+      \href{mailto:lhansen@uchicago.edu}{lhansen@uchicago.edu}\\[9pt]
+    \textbf{Professor Mikhail Golosov} & \textbf{Professor Raghuram Rajan}\\
+    Department of Economics & Booth School of Business\\
+    University of Chicago & University of Chicago\\
+    773-702-6405 & 773-702-4437\\
+    \href{mailto:golosov@uchicago.edu}{golosov@uchicago.edu} &
+      \href{mailto:raghuram.rajan@chicagobooth.edu}{raghuram.rajan@chicagobooth.edu}
+  \end{tabularx}
+\end{sectionbody}
+
+\section*{Prior Education}
+\begin{sectionbody}
+  \education{Columbia University}{August 2019--June 2021}{%
+    M.S. in Financial Economics, Columbia Business School}
+  \vspace{3pt}
+  \education{Tsinghua University}{August 2015--June 2019}{%
+    B.S. in Economics and Finance}
+\end{sectionbody}
+
+\section*{Fields}
+\begin{sectionbody}
+  Macro-finance, Real Estate, Household Finance, Corporate Finance
+\end{sectionbody}
+
+\newpage
+
+\section*{Job Market Paper}
+\begin{sectionbody}
+  \textbf{When Banks Wait: Strategic Delay in Distressed Loan Resolution}
+  \paperabstract{Why do banks delay resolving distressed loans, even when they
+  are well capitalized? I study this question in the U.S. commercial real estate
+  market following the pandemic. I develop a dynamic model in which resolving
+  distressed loans generates public information about collateral values. Banks
+  have an incentive to wait for information from other banks' resolutions, but
+  realized peer resolutions encourage subsequent resolution by reducing valuation
+  uncertainty. Using loan-level data constructed from land records, I find that
+  more early peer resolutions are associated with a lower probability of
+  subsequent loan extension. Consistent with the information mechanism, this
+  relationship is stronger when transaction prices are publicly disclosed.
+  These findings identify an informational channel through which banks'
+  resolution decisions interact: waiting for others to generate information slows
+  information production and can prolong both distress and valuation uncertainty.}
+\end{sectionbody}
+
+\section*{Working Papers}
+\begin{sectionbody}
+  \begin{enumerate}
+    \item \textbf{Optimal Household Financial Portfolios}\\
+      with \href{https://voices.uchicago.edu/golosov/}{Mikhail Golosov}
+      and \href{https://www.bhandarianmol.com/}{Anmol Bhandari}
+
+    \item \textbf{A Risk Factor Model Analysis for Commercial Real Estate}\\
+      Liew Fama-Miller Fellowship for Best Second-Year Paper
+      \paperabstract{This study investigates how risks in other financial markets
+      affect returns in CRE. I introduce a new approach that blends traditional
+      analysis with a technique to adjust for price delays caused by slow market
+      activity. The research finds that factors related to bonds are better
+      predictors of CRE returns than those related to stocks. This suggests that
+      CRE might protect against certain financial risks. The study also shows
+      that CRE returns are influenced by economic cycles and credit availability.
+      Interestingly, CREs with higher exposure to risks in the financial sector
+      tend to have lower returns, indicating that CRE may help reduce certain
+      financial system risks.}
+  \end{enumerate}
+\end{sectionbody}
+
+\section*{Work in Progress}
+\begin{sectionbody}
+  \begin{enumerate}
+    \item \textbf{Vertical Integration in Commercial Real Estate}\\
+      with \href{https://camillaschneier.github.io/}{Camilla Schneier}
+  \end{enumerate}
+\end{sectionbody}
+
+\section*{Pre-doctoral Publication}
+\begin{sectionbody}
+  \textbf{Downside Risk and Corporate Bond Yields: Evidence from the Chinese Market}\\
+  with Jinliang Li and Yao Wu. \textit{China Journal of Economics}, 7(1),
+  March 2020, pp.~1--25.
+\end{sectionbody}
+
+\section*{Conferences and Seminars}
+\begin{sectionbody}
+  \textit{Optimal Household Financial Portfolios}: 2026 Blue Collar Working Group,
+  SED 2026, Asset Pricing Working Group.
+\end{sectionbody}
+
+\section*{Research Experience}
+\begin{sectionbody}
+  \renewcommand{\arraystretch}{1.0}
+  \begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{1.35in}X@{}}
+    May 2023--present & Research Assistant to Mikhail Golosov, University of Chicago;
+      public finance.\\[1pt]
+    Sept. 2023--Mar. 2024 & Research Assistant to Ralph Koijen, Chicago Booth;
+      empirical asset pricing.\\[1pt]
+    Feb. 2023--Mar. 2024 & Research Assistant to Lars Peter Hansen, Chicago Booth;
+      economic dynamics.\\[1pt]
+    June 2021--Sept. 2022 & Research Assistant to Wenxin Du, Chicago Booth;
+      international finance.\\[1pt]
+    2020 & Research Assistant to Jesse Schreger, Columbia Business School;
+      international finance.\\[1pt]
+    June--Sept. 2020 & Research Assistant to Laura Veldkamp, Columbia Business School;
+      information economics.\\[1pt]
+    Nov. 2019--June 2020 & Research Assistant to Geoffrey Heal, Columbia Business School;
+      environmental economics.
+  \end{tabularx}
+\end{sectionbody}
+
+\newpage
+
+\section*{Teaching}
+\begin{sectionbody}
+  \begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.95in}X@{}}
+    \textit{Chicago Booth} & Corporate Finance (EMBA) --- Spring 2025\\
+      & {\small Teaching Assistant to Yueran Ma}\\[3pt]
+      & Asset Pricing I (Ph.D.) --- Fall 2024\\
+      & {\small Teaching Assistant to Lars Peter Hansen and John Heaton}\\[3pt]
+      & Advanced Investment (MBA) --- Winter 2024, Winter 2025, Spring 2026\\
+      & {\small Teaching Assistant to Stefan Nagel}\\[3pt]
+      & International Corporate Finance (MBA) --- Fall 2023\\
+      & {\small Teaching Assistant to Raghuram Rajan}\\[5pt]
+    \textit{UChicago Economics} & Empirical Analysis III (Ph.D.) --- Spring 2024\\
+      & {\small Teaching Assistant to Lars Peter Hansen and Harald Uhlig}\\[3pt]
+      & Theory of Income I (Ph.D.) --- Fall 2022\\
+      & {\small Teaching Assistant to Nancy Stokey}\\[3pt]
+      & Theory of Income II (Ph.D.) --- Winter 2022\\
+      & {\small Teaching Assistant to Mikhail Golosov}\\[5pt]
+    \textit{Columbia Business School} & Introduction to Econometrics and Statistical Inference (Ph.D.) --- Fall 2020\\
+      & {\small Teaching Assistant to Fanyin Zheng}
+  \end{tabularx}
+\end{sectionbody}
+
+\section*{Referee Service}
+\begin{sectionbody}
+  \textit{Journal of Political Economy Macroeconomics}
+\end{sectionbody}
+
+\section*{Honors, Awards, Scholarships, and Fellowships}
+\begin{sectionbody}
+  \begin{tabularx}{\linewidth}{@{}X>{\raggedleft\arraybackslash}p{1.0in}@{}}
+    Liew Fama-Miller Ph.D. Fellowship, Fama-Miller Center & 2021, 2022, 2023\\[5pt]
+    Lee Prize for the Best Macroeconomics Core Exam, University of Chicago & 2022\\[5pt]
+    Dean's Honors with Distinction, Columbia Business School & 2021\\[5pt]
+    Merit-based Fellowships, Columbia Business School & 2019, 2020\\[5pt]
+    Meritorious Winner, MCM/ICM Mathematical Contest in Modeling (top 10\%) & 2018\\[5pt]
+    Extraordinary Academic Achievement Scholarship, Tsinghua University (top 5\%) & 2016, 2017
+  \end{tabularx}
+\end{sectionbody}
+
+\section*{Software}
+\begin{sectionbody}
+  Software copyright: Chinese Future Market Big Data Analysis Software\hfill 2018
+\end{sectionbody}
+
+\vspace{12pt}
+\hfill\textit{Last updated: October 2026}
+
+\end{document}
