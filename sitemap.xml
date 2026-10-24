@@ -3,17 +3,17 @@
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://judyyuehui.github.io/</loc>
-    <lastmod>2026-10-16</lastmod>
+    <lastmod>2026-10-24</lastmod>
     <image:image>
       <image:loc>https://judyyuehui.github.io/Judy_Yue.png?v=2b98957488</image:loc>
     </image:image>
   </url>
   <url>
     <loc>https://judyyuehui.github.io/teaching.html</loc>
-    <lastmod>2026-10-16</lastmod>
+    <lastmod>2026-10-24</lastmod>
   </url>
   <url>
-    <loc>https://judyyuehui.github.io/Judy_Resume.pdf</loc>
+    <loc>https://judyyuehui.github.io/judyyue_cv.pdf</loc>
     <lastmod>2026-10-16</lastmod>
   </url>
 </urlset>
